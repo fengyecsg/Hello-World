@@ -34,7 +34,7 @@
 
 /* Begin PBXFileReference section */
 		04ED523F1C869A6E00D03552 /* Storyboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Storyboard.storyboard; sourceTree = "<group>"; };
-		7B3DEE7E18BD7FDD004EE6EB /* Hello World.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Hello World.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7B3DEE7E18BD7FDD004EE6EB /* HelloWorld.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HelloWorld.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7B3DEE8118BD7FDD004EE6EB /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		7B3DEE8318BD7FDD004EE6EB /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		7B3DEE8518BD7FDD004EE6EB /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
@@ -89,7 +89,7 @@
 		7B3DEE7F18BD7FDD004EE6EB /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				7B3DEE7E18BD7FDD004EE6EB /* Hello World.app */,
+				7B3DEE7E18BD7FDD004EE6EB /* HelloWorld.app */,
 				7B3DEE9918BD7FDD004EE6EB /* Hello WorldTests.xctest */,
 			);
 			name = Products;
@@ -150,9 +150,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		7B3DEE7D18BD7FDD004EE6EB /* Hello World */ = {
+		7B3DEE7D18BD7FDD004EE6EB /* HelloWorld */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 7B3DEEAA18BD7FDD004EE6EB /* Build configuration list for PBXNativeTarget "Hello World" */;
+			buildConfigurationList = 7B3DEEAA18BD7FDD004EE6EB /* Build configuration list for PBXNativeTarget "HelloWorld" */;
 			buildPhases = (
 				7B3DEE7A18BD7FDD004EE6EB /* Sources */,
 				7B3DEE7B18BD7FDD004EE6EB /* Frameworks */,
@@ -162,9 +162,9 @@
 			);
 			dependencies = (
 			);
-			name = "Hello World";
+			name = HelloWorld;
 			productName = "Hello World";
-			productReference = 7B3DEE7E18BD7FDD004EE6EB /* Hello World.app */;
+			productReference = 7B3DEE7E18BD7FDD004EE6EB /* HelloWorld.app */;
 			productType = "com.apple.product-type.application";
 		};
 		7B3DEE9818BD7FDD004EE6EB /* Hello WorldTests */ = {
@@ -211,7 +211,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				7B3DEE7D18BD7FDD004EE6EB /* Hello World */,
+				7B3DEE7D18BD7FDD004EE6EB /* HelloWorld */,
 				7B3DEE9818BD7FDD004EE6EB /* Hello WorldTests */,
 			);
 		};
@@ -261,7 +261,7 @@
 /* Begin PBXTargetDependency section */
 		7B3DEE9F18BD7FDD004EE6EB /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 7B3DEE7D18BD7FDD004EE6EB /* Hello World */;
+			target = 7B3DEE7D18BD7FDD004EE6EB /* HelloWorld */;
 			targetProxy = 7B3DEE9E18BD7FDD004EE6EB /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -303,6 +303,7 @@
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -342,7 +343,8 @@
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
 				COPY_PHASE_STRIP = YES;
 				ENABLE_NS_ASSERTIONS = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -367,6 +369,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Hello World/Hello World-Prefix.pch";
 				INFOPLIST_FILE = "Hello World/Hello World-Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = com.pengWifi.maiLife.helloworld;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -381,6 +384,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Hello World/Hello World-Prefix.pch";
 				INFOPLIST_FILE = "Hello World/Hello World-Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = com.pengWifi.maiLife.helloworld;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -440,7 +444,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		7B3DEEAA18BD7FDD004EE6EB /* Build configuration list for PBXNativeTarget "Hello World" */ = {
+		7B3DEEAA18BD7FDD004EE6EB /* Build configuration list for PBXNativeTarget "HelloWorld" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				7B3DEEAB18BD7FDD004EE6EB /* Debug */,
